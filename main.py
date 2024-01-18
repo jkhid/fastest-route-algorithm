@@ -1,5 +1,3 @@
-# Jamal Khidir Student ID - 011078274
-
 import csv
 from datetime import datetime, timedelta
 
@@ -13,7 +11,6 @@ with open('C:/Users/jamal/Downloads/distanceCSV.csv') as disCSV:
 
 
 # Hash Table class
-# Citing Zybooks hashtable source: W-1_ChainingHashTable_zyBooks_Key-Value.py
 class CreateHashTable:
     def __init__(self, initialcapacity=40):
         self.table = []
@@ -35,7 +32,7 @@ class CreateHashTable:
         return True
 
     # Searches the hash table for an item with the matching key
-    # Will return the item if founcd, or None if not found
+    # Will return the item if found, or none if not found
     def search(self, key):
         bucket = hash(key) % len(self.table)
         bucket_list = self.table[bucket]
